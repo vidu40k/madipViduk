@@ -1,5 +1,5 @@
-# poit
-Instructions for self-study activities
+# Instructions for self-study activities
+
 **Работа с репозиторием на GitHub** 
 
 * Установить R (Шипунов, А. Б., Раздел 2.5-2.6).

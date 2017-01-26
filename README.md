@@ -1,6 +1,6 @@
 # Instructions for self-study activities
 
-**Работа с репозиторием на GitHub** 
+**УСРС 1. Работа с репозиторием на GitHub** 
 
 * Установить R (Раздел 2.5-2.6 <sup>[1]</sup>).
 

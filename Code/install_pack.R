@@ -2,7 +2,7 @@ source("Code/my_functions.R")
 
 install.packages(c("plyr", "ggplot2", "highcharter", "sp", "dplyr", 
                    "lubridate", "rmarkdown", "tidyr",  
-                   "ggthemes", "xts", "cluster", "plotly", "maps"))
+                   "ggthemes", "xts", "cluster", "maps"))
 
 install.packages("nycflights13")
 
@@ -21,6 +21,6 @@ is.installed("cluster")
 is.installed("stats")
 is.installed("magrittr")
 is.installed("sp")
-is.installed("plotly")
 is.installed("maps")
-is.installed("tidyverse")
+
+

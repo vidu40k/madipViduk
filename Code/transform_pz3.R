@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 library(tidyr)
 # library(nycflights13)
 
@@ -36,13 +37,6 @@ filter(df, x > 1)
 filter(df, is.na(x) | x > 1)
 
 # Task1
-
-
-
-
-
-
-
 
 #arrange-----------
 
@@ -178,4 +172,41 @@ delays %>%
 daily <- group_by(flights, year, month, day)
 daily %>% 
   ungroup() %>%             # no longer grouped by date
-  summarise(flights = n())
+
+  
+library(tidyr)
+# library(nycflights13)
+
+# Load flights
+flights <- readRDS("Data/flights.RData")
+
+#filter-----------
+
+jan1 <- filter(flights, month == 1, day == 1)
+
+(dec25 <- filter(flights, month == 12, day == 25))
+
+# Floating point numbers
+sqrt(2) ^ 2 == 2
+1/49 * 49 == 1
+
+near(sqrt(2) ^ 2,  2)
+near(1 / 49 * 49, 1)
+
+# The following code finds all flights that departed in November or December:
+filter(flights, month == 11 | month == 12)
+
+# It finds all months that equal 11 | 12, that evaluates to TRUE, i.e. 1 (January)
+filter(flights, month == 11 | 12)
+
+# %in%
+nov_dec <- filter(flights, month %in% c(11, 12))
+
+# Flights that weren’t delayed (on arrival or departure) by more than two hours
+filter(flights, !(arr_delay > 120 | dep_delay > 120))
+filter(flights, arr_delay <= 120, dep_delay <= 120)
+
+# To preserve NA
+df <- tibble(x = c(1, NA, 3))
+filter(df, x > 1)
+filter(df, is.na(x) | x > 1)

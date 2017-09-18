@@ -1,7 +1,7 @@
 # Install new packages
 install.packages(c("plyr", "ggplot2", "highcharter", "sp", "dplyr", 
-                   "lubridate", "rmarkdown", "tidyr",  
-                   "ggthemes", "xts", "cluster"))
+                   "lubridate", "rmarkdown", "tidyr", "nycflights13", 
+                   "ggthemes", "xts", "cluster", "maps"))
 
 # Get and view working dir
 wdPath <- getwd()
